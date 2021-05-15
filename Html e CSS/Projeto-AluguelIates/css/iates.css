@@ -1,0 +1,53 @@
+body {
+    background-color: #EBEBEB;
+}
+
+header {
+    background-color: #21272B;
+    padding: 20px;
+}
+
+.caixa {
+    width: 940px;
+    /*position: relative;*/
+    margin: 0 auto;
+    
+}
+/*h1 {
+    vertical-align: baseline;
+}*/
+nav {
+    /*display: inline-block;
+    margin: 0 0 0 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    */
+    font-size: 14px;
+}
+
+nav li {
+    display:inline-block;
+    margin: 0 0 0 15px;
+    font-size: 14px;
+    border-right: 1px solid white;
+    padding-right: 20px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.conteudo {
+
+    width: 470px;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+
+
+}

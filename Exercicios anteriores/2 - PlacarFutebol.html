@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h3>Placar de futebol</h3>
+        <script>
+            function pulaLinha() {
+                document.write("<br>");
+            }
+            function escreve(texto) {
+                document.write(texto);
+                pulaLinha();
+            }
+            var vitorias = parseInt(prompt("Entre com o numero de vitorias: "));
+            var empates = parseInt(prompt("Entre com o numero de empates: "));
+            var pontos = (vitorias * 3) + empates;
+
+            escreve("Os pontos do seu time é: " + pontos);
+            var numero = Math.round(Math.random());
+            console.log(numero)
+
+
+
+            
+            
+        </script>
+
+    </body>
+</html>
+

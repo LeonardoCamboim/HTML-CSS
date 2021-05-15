@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h3>Calculadora de IMC</h3>
+        <script>
+            function pulaLinha() {
+                document.write("<br>");
+            }
+            function escreve(texto) {
+                document.write(texto);
+                pulaLinha();
+            }
+            function calculoIMC (peso, altura){
+        
+                return peso / (altura * altura);
+            }
+
+           var altura = parseFloat(prompt("Insira a altura: "));
+           var peso = parseInt(prompt("Insira o peso: "));
+           var imc = calculoIMC(peso, altura);
+
+           escreve("O IMC do atleta é: " + imc);
+        </script>
+
+    </body>
+</html>
+

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <input/>
+        <button>Compare</button>
+
+        <script>
+
+            function sorteio(){
+
+                return (Math.round(Math.random() * 10));
+            }
+
+            function sorteioNumeros(quantidade){
+
+                var segredo = [];
+                var numero = 1;
+                while(numero <= quantidade){
+
+                    var numeroAleatorio = sorteio();
+                    var achou = false;
+
+                    if (achou == false){
+
+                        segredo.push(sorteio());
+                    }
+
+                    
+                    numero++;
+                }
+                return segredo;
+            }
+
+            var segredo = sorteioNumeros(3);
+           
+            var input = document.querySelector("input");
+            input.focus();
+
+            console.log(segredo);
+
+            function verifica(){
+
+                var achou = false;
+                for (var posição = 0; posição < segredo.length; posição++){
+
+                    if (input.value == segredo[posição]){
+                    alert("Voce acertou");
+                    achou = true;
+                    break;
+                    } 
+                }
+                if (achou == false){
+
+                    alert("Voce errou!")
+                }   
+                input.value = "";
+                input.focus();
+            }
+           
+            var button = document.querySelector("button");
+            button.onclick = verifica;
+
+        </script>
+    </body>
+</html>

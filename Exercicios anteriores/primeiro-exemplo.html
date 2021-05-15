@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>exercicio laboratorio 3</h1>
+    <input/> 
+    <button>Enter</button>
+    <script>
+        
+        function show(texto) {
+
+            document.write(texto);
+            document.write("<br>");
+        }
+
+        var insiraDados = document.querySelector("input");
+        insiraDados.focus();
+
+        function result(){
+
+            for (posicao = 0; posicao < insiraDados.value; posicao++) {
+
+                show(insiraDados.value);
+                insiraDados.value--;
+            }
+            insiraDados.value = "";
+            insiraDados.focus();
+
+        }
+        var button = document.querySelector("button");
+        button.onclick = result;
+
+
+    </script>
+</body>
+</html>
