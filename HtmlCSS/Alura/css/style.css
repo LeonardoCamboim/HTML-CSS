@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background-color: #BBBBBB;
     padding: 20px 0;
@@ -56,21 +60,23 @@ nav a:hover {
 
 .produtos li:hover {
     border-color: #C78C19;
+    transition: 1s all;
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .produtos li:active {
     border-color: #088C19;
 }
 
-
-
 .produtos h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
 }
 
 .produtos li:hover h2{
-    font-size: 34px;
+    font-size: 30px;
+
 }
 
 .produto-descricao {
@@ -152,4 +158,70 @@ thead {
 td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+/* Css da pagina principal*/
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+.principal em {
+    font-style: italic;
+}
+.principal strong {
+    font-weight: bold;
+}
+
+.mapa {
+    padding: 3em 0;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.imagem-beneficios {
+    width: 60%;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.utencilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 15px 0;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
 }
