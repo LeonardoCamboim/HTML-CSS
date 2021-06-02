@@ -173,6 +173,11 @@ td, th {
     clear: left;
 }
 
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+}
+
 .principal p {
     margin: 0 0 1em;
 }
@@ -190,6 +195,11 @@ td, th {
 .mapa p {
     margin: 0 0 2em;
     text-align: center;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
 }
 
 .conteudo-beneficios {
